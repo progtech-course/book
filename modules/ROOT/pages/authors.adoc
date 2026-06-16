@@ -1,0 +1,11 @@
+= Авторы
+:page-pagination:
+
+Здесь можно найти информацию про людей, участвовавших в создании этого ресурса.
+
+== Иван Калинин
+Почта: mailto:koefic.cien@gmail.com[koefic.cien@gmail.com] +
+GitHub: https://github.com/1BAH[1BAH] +
+GitLab: https://gitlab.com/lBAH[lBAH]
+
+_Тут типо инфа.._

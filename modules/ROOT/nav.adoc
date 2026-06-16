@@ -1,0 +1,4 @@
+.Intro
+* xref:authors.adoc[Авторы]
+* xref:code-of-conduct.adoc[Code of conduct]
+

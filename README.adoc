@@ -1,0 +1,16 @@
+= ProgTech Book
+:url-project: https://github.com/progtech-course/book/actions/workflows
+:workflow: site.yml
+:img-ci-status: {url-project}/{workflow}/badge.svg
+
+image:{img-ci-status}[CI Status]
+
+Материалы курса "Технологии Программирования".
+
+Проект распространяется под лицензией link:LICENSE[MPL-2.0].
+
+
+== Copyright
+
+Main author::
+(C) 2026-present *Iwan Kalinin* <mailto:koefic.cien@gmail.com[koefic.cien@gmail.com]>

@@ -1,0 +1,19 @@
+site:
+  title: ProgTech Book
+  start_page: ptbook::index.adoc
+content:
+  sources:
+    - url: .
+      branches: [ '*' ]
+ui:
+  bundle:
+    url: https://github.com/progtech-course/antora-ui/releases/download/latest/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+      languages: [en, ru]
+
+#runtime:
+#  fetch: true

@@ -1,0 +1,7 @@
+{{#if url}}
+  <a href="{{url}}">{{name}}</a>
+{{else if email}}
+  <a href="mailto:{{email}}">{{name}}</a>
+{{else}}
+  <a href="{{relativize (resolvePageURL 'authors.adoc')}}#{{{ getAuthorURL name }}}">{{name}}</a>
+{{/if}}
