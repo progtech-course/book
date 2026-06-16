@@ -3,7 +3,7 @@ site:
   start_page: ptbook::index.adoc
 content:
   sources:
-    - url: .
+    - url: https://github.com/progtech-course/book
       branches: [ '*' ]
 ui:
   bundle:
