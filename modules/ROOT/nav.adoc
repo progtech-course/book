@@ -2,3 +2,5 @@
 * xref:authors.adoc[Авторы]
 * xref:code-of-conduct.adoc[Code of conduct]
 
+.Linux FS
+* xref:linux/fhs.adoc[FHS]

@@ -1,5 +1,5 @@
 name: ptbook
-version: latest
+version: dev
 title: ProgTech Book
 nav:
   - modules/ROOT/nav.adoc

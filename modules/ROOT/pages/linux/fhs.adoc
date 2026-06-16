@@ -1,0 +1,7 @@
+= Filesystem Hierarchy Standard
+:page-pagination:
+:page-authors: Иван Калинин
+
+*Filesystem Hierarchy Standard (FHS)* - это соглашение об устройстве фс, использующееся в большинстве самых популярных дистрибутивов Linux. Однако, есть дистрибутивы не следующие ему. Таким, например, является https://nixos.org/[NixOS].
+
+
