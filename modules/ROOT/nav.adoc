@@ -3,4 +3,5 @@
 * xref:code-of-conduct.adoc[Code of conduct]
 
 .Linux FS
+* xref:linux/file-types.adoc[Типы файлов]
 * xref:linux/fhs.adoc[FHS]
