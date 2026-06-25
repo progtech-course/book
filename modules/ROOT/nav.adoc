@@ -1,6 +1,7 @@
-.Intro
+.О проекте
 * xref:authors.adoc[Авторы]
 * xref:code-of-conduct.adoc[Code of conduct]
+* xref:dev-guides.adoc[Гайды по разработке]
 
 .Linux FS
 * xref:linux/file-types.adoc[Типы файлов]
