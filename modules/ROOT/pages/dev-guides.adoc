@@ -1,4 +1,6 @@
 = Как разрабатывать сайт
+:page-pagination:
+:page-authors: Иван Калинин
 
 == Инструменты
 
@@ -25,12 +27,12 @@ npx antora --stacktrace antora-playbook.yml
 
 
 Для динамического превью нужно использовать докер:
-[,shell]
+[.wrap,shell]
 ----
 docker run --rm -p 35729:35729 -p 2020:2020 -v "${PWD}":/preview/antora -v "${PWD}/bundle:/preview/bundles" ghcr.io/vshn/antora-preview --antora='.' --style=ui-bundle
 ----
 
-IMPORTANT: Для подгрузки стилей скачайте `ui-bundle.zip` из https://github.com/progtech-course/antora-ui/releases/tag/latest[проекта] и поместите в папку `bundle` в корне проекта.
+NOTE: Для подгрузки стилей скачайте `ui-bundle.zip` из https://github.com/progtech-course/antora-ui/releases/tag/latest[проекта] и поместите в папку `bundle` в корне проекта.
 
 Сайт будет доступен на http://localhost:2020. Однако, уже тут не будет работать фавиконка и настройки UI.
 
@@ -39,7 +41,7 @@ IMPORTANT: Для подгрузки стилей скачайте `ui-bundle.zi
 == Настройка плейбука
 
 При локальной разработке советую использовать следующую модификацию `antora-playbook.yml`:
-[,yaml]
+[.wrap,yaml]
 ----
 site:
   title: ProgTech Book
@@ -69,3 +71,21 @@ antora:
 
 WARNING: Не нужно это коммитить в репозиторий!
 
+== Возможности asciidoctor
+
+Посмотреть, как можно оформить материалы, можно на https://progtech-course.github.io/antora-ui[превью UI]. Исходники аскидоктора лежат https://github.com/progtech-course/antora-ui/blob/main/preview-src/index.adoc[здесь].
+
+Также поддерживается кастомная стилизация TODO:
+
+[.wrap,asciidoc]
+----
+// TODO
+[TIP.todo]
+====
+Нужна ссыль на mounting process
+====
+----
+
+CAUTION: При ее использовании просьба оставлять выше комментарий `// TODO` -- так IDE сможет трекать тудушки в проекте.
+
+При написании страницы добавляйте параметр `:page-pagination:`, а также указывайте себя в `:page-authors:`. При указании авторства пишите так же, как в заголовке xref:authors.adoc[authors.adoc] -- иначе не сработают автоматические ссылки.
